@@ -19,10 +19,12 @@ class Person(object):
       'email': person.get('email', None),
     }
 
+
 anthony = Person({
   'firstName': 'Anthony',
   'lastName': 'Scinocco',
   'email': 'anthony1@mail.io'
 })
 
-print(anthony.serialize())
+# print(anthony.serialize())
+print(anthony.__dict__) # dict method will print out the objects attributes as a dict
